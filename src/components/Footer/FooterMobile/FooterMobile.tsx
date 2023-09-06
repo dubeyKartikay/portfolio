@@ -1,10 +1,7 @@
-import useScroll from "../../../customHooks/useScroll";
 
 export default function FooterMobile() {
-  const visible = useScroll({bottom:true,ScrollDown:true,default:true});
-  console.log(visible);
   return (
-    <div className={`absolute transition-all w-[calc(100%-2rem)] ${visible ? "top-full -translate-y-full opacity-100" : "-bottom-96 opacity-0"} `}>
+    <div className={`fixed bottom-6 transition-all w-[calc(100%-2rem)] opacity-100`}>
       <div className="flex justify-around">
         <a className="group w-fit h-fit" href="https://www.github.com">
           <svg

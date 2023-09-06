@@ -1,3 +1,4 @@
+import { Key } from "react";
 import { NavItem, navItems } from "../contents";
 export const NavBarDesktop = () => {
   return (
@@ -6,8 +7,8 @@ export const NavBarDesktop = () => {
         <img alt="kartikay dubey's avatar" src="Avatar.png" />
       </div>
       <ul className="max-w-md w-4/5 flex justify-between items-center">
-        {navItems.map((element: NavItem) => (
-          <li  >
+        {navItems.map((element: NavItem,ind:Number) => (
+          <li key={ind as Key} >
             <a href={element.link}>
               <h6 className="text-lg"> {element.title} </h6>
             </a>

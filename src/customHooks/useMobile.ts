@@ -8,13 +8,17 @@ export default function useMobile(screenSize: number) {
     }else{
       setMobile(false);
     }
-    window.onresize = () => {
+    const handleResize =  () => {
       if (window.innerWidth < screenSize) {
         setMobile(true);
       }else{
         setMobile(false);
       }
-    };
+    }
+
+    window.addEventListener("resize", handleResize   )
+    return ( () => {window.removeEventListener("resize",handleResize)})
+
   }, []);
   return mobile;
 }
