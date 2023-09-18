@@ -22,7 +22,7 @@ body {
 
 @media screen and (min-width : 900px){
   body{
-    margin : 0rem 10rem;
+    padding : 0rem 10rem;
   }  
 }
 h1,

@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
-export default function useMobile(screenSize: number) {
+import { SCREEN_SIZES } from "../utils/constants";
+export default function useMobile() {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     console.log(window.innerWidth);
-    if (window.innerWidth < screenSize) {
+    if (window.innerWidth < SCREEN_SIZES.MOBILE) {
       setMobile(true);
     }else{
       setMobile(false);
     }
     const handleResize =  () => {
-      if (window.innerWidth < screenSize) {
+      if (window.innerWidth < SCREEN_SIZES.MOBILE) {
         setMobile(true);
       }else{
         setMobile(false);

@@ -2,7 +2,7 @@ import { Key } from "react";
 import { NavItem, navItems } from "../contents";
 export const NavBarDesktop = () => {
   return (
-    <div className="flex justify-between pt-8">
+    <div className="fixed top-0 left-0 p-4 w-full flex justify-between bg-background ">
       <div className="w-20">
         <img alt="kartikay dubey's avatar" src="Avatar.png" />
       </div>

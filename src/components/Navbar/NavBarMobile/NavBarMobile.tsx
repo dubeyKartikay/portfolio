@@ -9,7 +9,7 @@ export const NavBarMobile = () => {
   
   return (
     <>
-      <div className="fixed w-full flex justify-between ">
+      <div className="fixed top-0 left-0 p-4 w-full flex justify-between bg-background ">
         <div className="w-16">
           <img alt="Kartikay Dubey's Avatar" src="Avatar.png" />
         </div>
@@ -33,7 +33,7 @@ export const NavBarMobile = () => {
           </div>
         </div>
       </div>
-      <div className={`absolute top-[100px] h-[calc(100vh-100px)] w-full transition-all ${isCollapsed?"-left-96 opacity-0":"left-0 opacity-1"}`}>
+      <div className={`absolute bg-background top-[100px] h-[calc(100vh-100px)] w-full transition-all ${isCollapsed?"-left-96 opacity-0":"left-0 opacity-1"}`}>
           <ul className="h-full flex flex-col justify-evenly items-center`" >
           {navItems.map((element: NavItem,ind : Number) => (
             <li key={ind as Key} className={`block m-auto ${element.title=='blogs' ? "hover:text-destructivenav" : "hover:text-nav"}`}>
