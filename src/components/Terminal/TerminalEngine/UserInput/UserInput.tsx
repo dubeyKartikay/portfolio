@@ -1,9 +1,7 @@
-import React from 'react'
-
-export const UserInput = (props : {}) => {
+export const UserInput = () => {
   return (
     <div>
-      
+      <input/>      
     </div>
   )
 }
