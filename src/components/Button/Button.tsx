@@ -8,7 +8,7 @@ type ButtonProps = {
 };
 export const Button = (props: ButtonProps) => {
   const innerButtion = (
-    <div className="bg-buttons text-xl px-16 py-3 rounded-2xl transition-all hover:contrast-200 hover:scale-110 hover:shadow-xl">
+    <div className="bg-buttons text-xl px-16 py-3 max-w-fit rounded-2xl transition-all hover:contrast-200 hover:scale-110 hover:shadow-xl">
       {props.text}
     </div>
   );

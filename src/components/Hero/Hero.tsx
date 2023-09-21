@@ -1,9 +1,10 @@
-import { Button } from "../Button/Button"
+import { Heading } from "./Heading/Heading"
+import { CTA } from "./CTA/CTA"
 export const Hero = () => {
   return (
     <div>
-     Hero 
-    <Button type="btn" href="#contact" text="Contact Me"/>
+    <Heading/>
+    <CTA/>
     </div>
   )
 }
