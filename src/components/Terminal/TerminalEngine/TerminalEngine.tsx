@@ -1,9 +1,7 @@
-import React from 'react'
-
-export const TerminalEngine = (props : {}) => {
+export const TerminalEngine = () => {
   return (
     <div>
-      
+      Engine      
     </div>
   )
 }

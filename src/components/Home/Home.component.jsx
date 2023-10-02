@@ -4,7 +4,7 @@ import { Terminal } from "../Terminal/Terminal"
 const Home= () => {
   const isMobile = useMobile();
   return (
-    <div className="flex max-w-full flex-row justify-center items-center">
+    <div className="flex max-w-full flex-row justify-around items-center">
      <Hero/>
       {!isMobile && <Terminal/>}
     </div>

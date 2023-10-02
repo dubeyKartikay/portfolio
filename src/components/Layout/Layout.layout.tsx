@@ -1,10 +1,8 @@
 import { Navbar } from "../Navbar/Navbar" 
 import Footer from "../Footer/Footer"
-import React  from "react"
-type LayoutProps = {
-  children:React.ReactNode;
-}
-export default function Layout(props:LayoutProps){
+import React, { PropsWithChildren }  from "react"
+
+export default function Layout(props:PropsWithChildren){
   return( 
     <>
     <Navbar/>

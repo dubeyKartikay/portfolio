@@ -14,7 +14,7 @@ export const Button = (props: ButtonProps) => {
   );
 
   return (
-    props.type == "link" ? <a className={props.className} href={props.href}>{innerButtion}</a> : <button className={props.className} onClick={props.onClick} > {innerButtion} </button>
+    props.type === "link" ? <a className={props.className} href={props.href}>{innerButtion}</a> : <button className={props.className} onClick={props.onClick} > {innerButtion} </button>
     
   );
 };
