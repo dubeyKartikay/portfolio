@@ -1,6 +1,4 @@
-import React from 'react'
-
-export const TerminalOut = (props : {}) => {
+export const TerminalOut = ()/home/kartikayd/Documents/Resume_format_IIITD.pdf => {
   return (
     <div>
       

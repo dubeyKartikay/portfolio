@@ -1,7 +1,7 @@
 import {createContext, Dispatch, PropsWithChildren, useReducer} from "react";
-import { termlistInitState,termlistReducer, TTermDispatch, TTermList } from "../utils/termList";
-type TTermContext = {
-  termlist: TTermList,
+import { termlistInitState,termlistReducer, TTermDispatch, TTermState } from "../utils/termList";
+export type TTermContext = {
+  termlist: TTermState,
   termDispatch: Dispatch<TTermDispatch>
 }
 export const TermContext = createContext<TTermContext|null>(null)
