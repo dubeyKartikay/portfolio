@@ -1,8 +1,5 @@
-type TerminalPromptProps = {
-  pwd : string
-}
-export const TerminalPrompt = ( props:TerminalPromptProps) => {
-  const {pwd} = props;
+export const TerminalPrompt = () => {
+  const pwd = "!";
   return (
     <div className="block" >
       <div>

@@ -1,7 +1,5 @@
-export const TerminalOut = ()/home/kartikayd/Documents/Resume_format_IIITD.pdf => {
+export const TerminalOut = ()=> {
   return (
-    <div>
-      
-    </div>
+    <div></div>
   )
 }
